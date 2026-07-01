@@ -5,7 +5,7 @@
 Create a "context" folder in "src". make a file named "CartContext.jsx"/etc.
 
 # Step-2 
-paste this code :
+paste this code -
 import { createContext, useState, useContext } from "react";
 
 // ১. বয়ামটা তৈরি করলাম
