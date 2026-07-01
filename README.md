@@ -36,11 +36,11 @@ go to main jsx. import and wrap it like-
 
 import { CartProvider } from "./context/CartContext";
 
-//  <CartProvider>
-//    <StrictMode>
-//      <RouterProvider router={Routes} />
-//    </StrictMode>
-//  </CartProvider>
+  <CartProvider>
+   <StrictMode>
+      <RouterProvider router={Routes} />
+   </StrictMode>
+  </CartProvider>
 
   # step-4 
   go to the page where you want to change value count then import hook and use it like this-
