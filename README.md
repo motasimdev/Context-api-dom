@@ -1,10 +1,10 @@
 # Context-api-dom
 # make a count update with context api
 
-#Step-1
+#Step-1 =>
 Create a "context" folder in "src". make a file named "CartContext.jsx"/etc.
 
-#Step-2
+#Step-2 =>
 paste this code :
 import { createContext, useState, useContext } from "react";
 
@@ -31,7 +31,7 @@ export const CartProvider = ({ children }) => {
 // ৩. একটা কাস্টম হুক বানিয়ে রাখলাম যাতে সহজে অন্য ফাইলে ব্যবহার করা যায়
 export const useCart = () => useContext(CartContext);
 
-#step-4
+#step-3 =>
 go to main jsx. import and wrap it like-
 
 import { CartProvider } from "./context/CartContext";
@@ -42,7 +42,7 @@ import { CartProvider } from "./context/CartContext";
     </StrictMode>
   </CartProvider>
 
-  #step-5
+  #step-4 =>
   go to the page where you want to change value count then import hook and use it like this-
 
   import { useCart } from "../context/CartContext"; // হুকটা ইমপোর্ট করো
@@ -64,7 +64,7 @@ const Header = () => {
 };
 export default Header;
 
-#step-6
+#step-5 =>
 then go to the page where you want to click then import hook and use it like this-
 
 import { useCart } from "../context/CartContext"; // হুকটা ইমপোর্ট করো
