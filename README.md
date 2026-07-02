@@ -8,8 +8,11 @@ Create a "context" folder in "src". make a file named "CartContext.jsx"/etc.
 paste this code -
 
 import { createContext, useState } from "react";
+
 const CartContext = createContext();
+
 export const CartProvider = ({ children }) => {
+
     const [cartItems, setCartItems] = useState([]);
     return (
         <CartContext.Provider value={{ cartItems }}>
@@ -19,9 +22,6 @@ export const CartProvider = ({ children }) => {
 };
 
 export default CartContext;
-
-//  একটা কাস্টম হুক বানিয়ে রাখলাম যাতে সহজে অন্য ফাইলে ব্যবহার করা যায়
-export const useCart = () => useContext(CartContext);
 
 # step-3 
 go to main jsx. import and wrap it like-
