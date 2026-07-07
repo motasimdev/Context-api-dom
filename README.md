@@ -1,11 +1,16 @@
 # Context-api-dom
 # make a count update with context api
 
-# Step-1
+  
+<details>
+ <summary> <h2>Step-1</h2></summary>
 Create a "context" folder in "src". make a file named "CartContext.jsx"/etc.
+</details>
 
-# Step-2 
-paste this code -
+<details>
+  
+ <summary> <h2>Step-2</h2></summary>
+<h4>paste this code - </h4>
 
 ```
 import { createContext, useState } from "react";
@@ -52,9 +57,13 @@ export const CartProvider = ({ children }) => {
    };
    export default CartContext;
 ```
+</details>
 
-# step-3 
-go to main jsx. import "CartProvider" and wrap it like-
+
+<details>
+  
+ <summary> <h2> Step-3 </h2></summary>
+<h4> go to main jsx. import "CartProvider" and wrap it like- </h4>
 
 ```
 import { StrictMode } from "react";
@@ -72,8 +81,13 @@ createRoot(document.getElementById("root")).render(
   </CartProvider>
 );
 ```
-  # step-4 
-  go to the page where you want to change value count then import hook and use it like this-
+</details>
+
+
+<details>
+  
+   <summary> <h2> Step-4 </h2></summary>
+  <h4> go to the page where you want to change value count then import hook and use it like this- </h4>
 
 ```
 import { useContext } from "react";
@@ -94,9 +108,13 @@ const Header = () => {
 };
 export default Header;
 ```
+</details>
 
-# step-5 
-then go to the page where you want to click then import hook and use it like this-
+
+<details>
+  
+ <summary> <h2> Step-5 </h2></summary>
+<h4> then go to the page where you want to click then import hook and use it like this- </h4>
 
 ```
 import { useContext, useEffect, useState } from "react";
@@ -121,3 +139,4 @@ const Home = () => {
 
 export default Home;
   ```
+</details>
